@@ -15,3 +15,25 @@ Each file acts like a collection of a different type of entity or context;
 
 - `GG-promo-infra.md`: details about the Google Cloud Terraform infra;
 - `GG-promo.md`: details about the Google Cloud source code project;
+- `Profile.md`: personal working context, blockers, progress, goals, and AI expectations;
+- `TeamMembers.md`: people, roles, project familiarity, and team relationships;
+- `TechnologyStack.md`: tools, frameworks, environment details, setup constraints;
+- `jira-tickets/`: ticket-level notes, implementation history, and delivery context;
+- `demos/`: are artifacts created to be presented on the Sprint
+
+## Relationship Rules
+
+- Do not duplicate detailed information across files unless necessary;
+- Prefer referencing entities by name across files;
+- Use `Profile.md` as the source of truth for personal progress and onboarding state;
+- Use `TeamMembers.md` to specify details about team;
+
+## Agent Guidance
+
+When answering questions or generating text:
+
+- connect related facts across files;
+- treat names, tickets, and technologies as linked entities;
+- preserve the distinction between facts, assumptions, and notes;
+- prefer short, structured outputs;
+- avoid rewriting files unless explicitly requested;
