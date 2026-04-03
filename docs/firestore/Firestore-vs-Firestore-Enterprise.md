@@ -2,6 +2,118 @@
 
 The benchmark details are:
 
+## How Enterprise works differently from Standard
+
+This section focuses on mechanics, not marketing claims.
+
+### 1. Storage model and index storage behavior
+
+Standard edition:
+
+- Uses hybrid storage (SSD + HDD).
+- Automatically creates single-field indexes.
+- Composite indexes are added manually.
+- Practical effect: easier defaults, but automatic indexes increase index storage footprint.
+
+Enterprise edition:
+
+- Uses SSD storage.
+- Does not auto-create single-field indexes.
+- Indexes are optional and explicitly managed.
+- Supports broader index options (for example sparse, non-sparse, unique).
+- Practical effect: better control over index footprint and write-path behavior, but requires stronger index governance.
+
+Why this matters:
+
+- Storage cost is not only "GB price". It is data + index footprint + write amplification from index maintenance.
+- Enterprise can reduce unnecessary index storage, but SSD base storage is priced higher.
+
+### 2. Query execution behavior
+
+Standard edition:
+
+- Many query patterns require indexes and fail fast when a required index is missing.
+- Operationally, this pushes teams into "index-first" query design.
+
+Enterprise edition:
+
+- Queries can execute without pre-created indexes.
+- If index coverage is missing, execution can degrade toward broader scans.
+- Query Explain and Query Insights are central for tuning.
+
+Why this matters:
+
+- Enterprise gives higher query-shape flexibility, but that flexibility can create expensive plans if not tuned.
+
+### 3. Billing mechanics are fundamentally different
+
+Standard edition:
+
+- Billed primarily per document reads/writes/deletes.
+
+Enterprise edition:
+
+- Billed by data processed:
+- Read Units in 4 KiB tranches.
+- Write Units in 1 KiB tranches.
+- Real-time update units are separate in Enterprise Native mode.
+
+Why this matters:
+
+- Two queries returning the same 100 rows can have very different cost depending on bytes scanned and projection width.
+- Large documents and broad projections inflate Enterprise unit consumption.
+
+### 4. Execution engine capabilities
+
+Standard edition:
+
+- Core query model with stricter query-shape limits.
+
+Enterprise edition:
+
+- Advanced query engine.
+- Pipeline operations for richer server-side processing (aggregation/grouping/transform stages and expression functions).
+- MongoDB compatibility mode with a broad but not complete feature matrix.
+
+Why this matters:
+
+- Complex filtering and transformation can move from app loops into database-side execution.
+- This can improve architecture simplicity and reduce application-side CPU/egress, if query plans are index-aware.
+
+### 5. Hard operational boundaries for large datasets
+
+For Enterprise pipeline execution, key limits include:
+
+- Query deadline: 60 seconds.
+- Materialized memory during query execution: 128 MiB.
+
+For vector search:
+
+- Max embedding dimension: 2048.
+- Max nearest-neighbor results: 1000.
+
+Why this matters for 470,000,000 records:
+
+- The system must be designed for selective access paths.
+- Broad, weakly selective aggregations can hit deadline/memory limits even when features are available.
+
+### Practical recommendation for your migration context
+
+- Use Enterprise if you need advanced server-side query composition, Mongo compatibility, or vector retrieval.
+- Treat index design as a first-class architecture artifact, not a tuning afterthought.
+- Define workload classes early (point reads, bounded range reads, analytical aggregations, vector retrieval) and benchmark each class with production-like cardinality.
+
+References:
+
+- https://firebase.google.com/docs/firestore/editions
+- https://firebase.google.com/docs/firestore/compare-editions-for-native-mode
+- https://firebase.google.com/docs/firestore/enterprise/pipelines-overview
+- https://firebase.google.com/docs/firestore/pipelines/get-started-with-pipelines
+- https://firebase.google.com/docs/firestore/enterprise/supported-features-80
+- https://docs.cloud.google.com/firestore/docs/vector-search
+- https://cloud.google.com/firestore/pricing
+- https://cloud.google.com/firestore/enterprise/pricing
+
 ## 1. Unit economics benchmark for point reads and writes
 
 Using us-central1 list prices:
