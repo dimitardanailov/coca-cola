@@ -7,7 +7,11 @@
   "editor.formatOnSave": true,
   "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "search.exclude": {
     "**/.DS_Store": true
