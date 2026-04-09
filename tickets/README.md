@@ -1,7 +1,7 @@
 # Tickets Knowledge Structure
 
 This folder is a ticket knowledge base.
-Each ticket should keep all related context in one place: requirements, decisions, diagrams, docs, delivery notes, and optional code snippets.
+Each ticket should keep execution and delivery context in one place: requirements, decisions, ticket-local diagrams, delivery notes, and optional code snippets.
 
 ## Naming Convention (Recommended)
 
@@ -61,7 +61,7 @@ Optional files (add only when the ticket needs them):
 
 ### Folders
 
-- `assets/`: source docs, PDFs, screenshots, exported artifacts. Use topic subfolders (e.g. `assets/arb/`).
+- `assets/`: ticket-local raw artifacts (uploads, screenshots, temporary exports). Use topic subfolders (e.g. `assets/arb/`).
 - `diagrams/`: Mermaid, draw.io, or exported diagram images.
 - `snippets/`: short code examples or commands relevant to the ticket.
 - `demos/`: sprint demo artifacts for this ticket (slides, recordings, exported outputs). Add when a demo exists.
@@ -86,9 +86,12 @@ Optional files (add only when the ticket needs them):
 
 - Store external files under `assets/` inside the ticket folder.
 - Use topic subfolders when useful, for example `assets/arb/`.
+- Keep canonical, reusable architecture artifacts in `docs/`; tickets should reference those canonical paths.
+- For diagram-heavy architecture inputs, export to PNG and treat PNG as canonical for analysis and linking.
+- PDF/DOCX may exist only as optional raw uploads; do not rely on them as the sole analysis source.
 - Rename uploaded files to stable, readable names and keep numeric ordering:
-  - `01-arb-approved-architecture-cds.pdf`
-  - `02-c4p-instance-strategy-overview.pdf`
+  - `01-arb-architecture-overview.png`
+  - `02-c4p-instance-strategy-page-01.png`
   - `03-network-boundary-diagram.png`
 - Style guidelines for artifact names:
   - Use lowercase letters only.

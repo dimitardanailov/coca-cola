@@ -36,3 +36,12 @@ When answering questions or generating text:
 - preserve the distinction between facts, assumptions, and notes;
 - prefer short, structured outputs;
 - avoid rewriting files unless explicitly requested;
+
+## Documentation Governance
+
+- `docs/` is canonical knowledge (business and infrastructure source of truth), not ticket narration.
+- Documentation in `docs/` must be ticket-agnostic and must not contain delivery-specific wording such as ticket IDs, sprint context, or temporary implementation notes.
+- `tickets/` may reference and consume `docs/`; `docs/` must not depend on `tickets/`.
+- If both `docs/` and `tickets/` mention the same topic, keep durable facts in `docs/` and execution/work-tracking details in `tickets/`.
+- For diagram-heavy architecture artifacts, use PNG as the canonical format for analysis and cross-referencing.
+- PDF may be kept only as an optional raw upload; it must not be the only source format for architecture analysis.
