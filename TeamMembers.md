@@ -24,12 +24,14 @@ Short internal notes about the project team. This file is a personal reference u
 - Prefer facts over opinions;
 - Mark uncertain information explicitly;
 - Use this file as context for writing messages and understanding team structure;
+- Use `Nickname` values as stable identifiers in ticket metadata (`owners`);
 
 ## Team Members
 
 ### Tanya Tanevska
 
 - Full Name: Tanya Tanevska;
+- Nickname: tanyaTanevska;
 - Role: Director, IT Marketing;
 - Project familiarity: Core project member;
 - Location: Sofia;
@@ -39,15 +41,18 @@ Short internal notes about the project team. This file is a personal reference u
 ### Maria Dobreva
 
 - Full Name: Maria Dobreva;
+- Nickname: mariaDobreva;
 - Role: Team leader of Promo plus;
 - Project familiarity: Core project member;
 - Location: Sofia;
 - Contribution type: Software developer;
 - Language: first language bulgarian;
+- Notes: Team lead for Promo Plus;
 
 ### Irena Simeonova
 
 - Full Name: Irena Simeonova;
+- Nickname: irenaSimeonova;
 - Role: Manager, Scrum Master of Promo plus;
 - Project familiarity: Core project member;
 - Location: Sofia;
@@ -57,6 +62,7 @@ Short internal notes about the project team. This file is a personal reference u
 ### Vessela Velinova-Slancheva
 
 - Full Name: Vessela Velinova-Slancheva;
+- Nickname: vesselaVelinovaSlancheva;
 - Role: Marketing Technologies Product Owner
 - Project familiarity: Core project member;
 - Location: Sofia;
@@ -66,6 +72,7 @@ Short internal notes about the project team. This file is a personal reference u
 ### Marin Roglev
 
 - Full Name: Marin Roglev;
+- Nickname: marinRoglev;
 - Role: Director, Solution Architect;
 - Project familiarity: Core project member;
 - Location: Sofia;

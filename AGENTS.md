@@ -18,8 +18,7 @@ Each file acts like a collection of a different type of entity or context;
 - `Profile.md`: personal working context, blockers, progress, goals, and AI expectations;
 - `TeamMembers.md`: people, roles, project familiarity, and team relationships;
 - `TechnologyStack.md`: tools, frameworks, environment details, setup constraints;
-- `jira-tickets/`: ticket-level notes, implementation history, and delivery context;
-- `demos/`: are artifacts created to be presented on the Sprint
+- `tickets/`: ticket-level notes, implementation history, delivery context, and sprint demo artifacts; see `tickets/README.md` for structure rules;
 
 ## Relationship Rules
 
