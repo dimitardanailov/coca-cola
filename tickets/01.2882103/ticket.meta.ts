@@ -31,6 +31,6 @@ const ticketMeta: TicketMeta = {
     "../../docs/ARB/promo-cds-architecture/diagrams/promo-arb-architecture-scheduled-tasks.png",
     "../../docs/ARB/gcp-instances-strategy/README.md",
   ],
-  relatedFiles: ["00.index.md", "01.requirements.md", "02.decisions.md"],
-  lastUpdated: "2026-04-09",
+  relatedFiles: ["00.index.md", "01.requirements.md", "02.decisions.md", "03.resource-inventory.md"],
+  lastUpdated: "2026-04-15",
 };

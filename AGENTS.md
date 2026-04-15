@@ -37,6 +37,20 @@ When answering questions or generating text:
 - prefer short, structured outputs;
 - avoid rewriting files unless explicitly requested;
 
+## Knowledge Confidence
+
+Every statement in this knowledge base must carry an explicit confidence signal:
+
+- If a fact has a clear, traceable source (diagram, doc, code, team confirmation) — state or link it.
+- If a fact is inferred, pattern-based, or unverified — mark it with `?`.
+- Silence is not neutral. An unmarked statement will be read as verified. That is dangerous in a migration project.
+
+Knowledge bottlenecks are two-sided:
+- A new team member who does not yet know something should write `?` rather than guess.
+- A core team member whose knowledge is not yet written down is an equally real bottleneck.
+
+Both produce `?` entries. Both need to be resolved before implementation, not after.
+
 ## Documentation Governance
 
 - `docs/` is canonical knowledge (business and infrastructure source of truth), not ticket narration.
