@@ -27,6 +27,12 @@ Each file acts like a collection of a different type of entity or context;
 - Use `Profile.md` as the source of truth for personal progress and onboarding state;
 - Use `TeamMembers.md` to specify details about team;
 
+## Team Operating Model
+
+- [verified, 2026-04-15, source: team lead confirmation] There is no dedicated DevOps team member assigned to this project;
+- [verified, 2026-04-15, source: team lead confirmation] DevOps and infrastructure responsibilities are shared across the team;
+- [verified] Infrastructure changes should include explicit owner assignment in ticket/work item notes to avoid ownership gaps;
+
 ## Agent Guidance
 
 When answering questions or generating text:

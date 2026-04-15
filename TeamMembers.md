@@ -26,6 +26,12 @@ Short internal notes about the project team. This file is a personal reference u
 - Use this file as context for writing messages and understanding team structure;
 - Use `Nickname` values as stable identifiers in ticket metadata (`owners`);
 
+## Team Operating Model
+
+- [verified, 2026-04-15, source: team lead confirmation] There is no dedicated DevOps team member in Promo Plus;
+- [verified, 2026-04-15, source: team lead confirmation] DevOps and infrastructure work are shared responsibilities across the team;
+- [verified] For infra tasks, assign a clear owner per ticket/work item, even when implementation is collaborative;
+
 ## Team Members
 
 ### Tanya Tanevska
