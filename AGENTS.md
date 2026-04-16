@@ -15,6 +15,7 @@ Each file acts like a collection of a different type of entity or context;
 
 - `GG-promo-infra.md`: details about the Google Cloud Terraform infra;
 - `GG-promo.md`: details about the Google Cloud source code project;
+- `MODEL_STRUCTURE.md`: reusable execution-funnel model for spec-driven work and instruction quality;
 - `Profile.md`: personal working context, blockers, progress, goals, and AI expectations;
 - `TeamMembers.md`: people, roles, project familiarity, and team relationships;
 - `TechnologyStack.md`: tools, frameworks, environment details, setup constraints;
@@ -42,6 +43,39 @@ When answering questions or generating text:
 - preserve the distinction between facts, assumptions, and notes;
 - prefer short, structured outputs;
 - avoid rewriting files unless explicitly requested;
+
+## Spec-Driven Execution Standard
+
+Default working mode for analysis, planning, and implementation-related guidance is the execution funnel from `MODEL_STRUCTURE.md`.
+
+Expected sequence:
+
+1. Entry Gate
+2. Scope Check
+3. Spec
+4. Evidence
+5. Change Logic
+6. Validation
+7. High-Risk Changes (when behavior-shaping systems are affected)
+8. Terminology And Philosophy
+9. Compact summary
+
+Required output framing for complex work:
+
+- Facts
+- Assumptions
+- Unknowns
+- Evidence
+- Decision
+- Next step
+
+Stop condition:
+
+- If Spec or Evidence is missing for non-trivial changes, pause implementation and resolve the gap first.
+
+Evidence rule:
+
+- Prefer observed artifacts (files, logs, diffs, tests, diagrams) over unsupported claims.
 
 ## Knowledge Confidence
 

@@ -50,14 +50,31 @@ Optional files (add only when the ticket needs them):
     06.release-notes.md
 ```
 
+## Spec-Driven Ticket Flow (Default)
+
+Use the execution-funnel approach from `MODEL_STRUCTURE.md` as the default flow for each ticket.
+
+Recommended sequence:
+
+1. Entry Gate and Scope Check in `00.index.md`
+2. Spec in `01.requirements.md`
+3. Evidence snapshot in `00.index.md` and/or `07.analysis.md`
+4. Change Logic in `02.decisions.md`
+5. Validation plan and evidence in `05.testing.md`
+6. High-Risk Changes analysis in `03.architecture.md` or `07.analysis.md` when behavior-shaping systems are affected
+
+Practical rule:
+
+- Do not move implementation planning forward until scope, acceptance criteria, and evidence are explicit.
+
 ## File Purpose
 
 ### Required files
 
 - `ticket.meta.ts`: typed metadata — status, owner, related docs and files.
-- `00.index.md`: entry point, status, owner, knowledge nodes, relationship map, next steps.
-- `01.requirements.md`: scope, objective, inputs, acceptance criteria, constraints.
-- `02.decisions.md`: decision log, open questions, follow-up items.
+- `00.index.md`: entry point, status, owner, knowledge nodes, relationship map, next steps, plus entry-gate/scope/evidence snapshot.
+- `01.requirements.md`: scope, objective, inputs, acceptance criteria, constraints, and non-goals.
+- `02.decisions.md`: decision log, alternatives considered, rejections, open questions, follow-up items.
 
 ### Folders
 
@@ -70,13 +87,14 @@ Optional files (add only when the ticket needs them):
 
 - `03.architecture.md`: design choices, trade-offs, sequence/data flow.
 - `04.implementation-plan.md`: task breakdown and rollout steps.
-- `05.testing.md`: test strategy, cases, evidence, known gaps.
+- `05.testing.md`: test strategy, cases, validation evidence, known gaps.
 - `06.release-notes.md`: what changed, impact, rollback notes.
-- `07.analysis.md`: findings, dependencies, risks, assumptions. Use when research is significant enough to deserve a separate file.
+- `07.analysis.md`: findings, dependencies, risks, assumptions, and high-risk before/after behavior analysis. Use when research is significant enough to deserve a separate file.
 
 ## Content Rules
 
 - Keep facts, assumptions, and open questions clearly separated.
+- For non-trivial tickets, structure conclusions as: facts, assumptions, unknowns, evidence, decision, next step.
 - Avoid duplicating detailed info from root knowledge files; link to them instead.
 - Put cross-file references in `00.index.md` for quick prompt context.
 - Keep each markdown file focused on one concern.

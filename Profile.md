@@ -45,6 +45,8 @@ This file is a personal onboarding and working-context note. It is used to:
 - Help me formulate concise questions when I get blocked;
 - Help me distinguish assumptions from facts;
 - Help me track missing information like env vars, package access, setup steps, and team ownership;
+- For non-trivial tasks, guide me in this order: entry gate, scope, spec, evidence, change logic, validation;
+- Summarize complex outputs with: facts, assumptions, unknowns, evidence, decision, next step;
 
 ## Relevant Background
 
