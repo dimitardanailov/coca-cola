@@ -21,16 +21,14 @@ This file is a personal onboarding and working-context note. It is used to:
 ## Current Progress
 
 - Access to github, microsoft, outlook;
-- Ticket: 2882103 (Setup Infra based on architecture). The ticket doesn't have details or description;
+- Ticket: 2882103 (Setup Infra based on architecture).
 
 ## Current Goal
 
 ## Current Blockers
 
 - My domain expertise related of the project is limited;
-- The ticket details are just title;
 - I prefer to discover the setup by myself before asking others;
-- The internal knowledge base is large and difficult to navigate for the first time;
 
 ## Working Style
 
@@ -47,6 +45,7 @@ This file is a personal onboarding and working-context note. It is used to:
 - Help me track missing information like env vars, package access, setup steps, and team ownership;
 - For non-trivial tasks, guide me in this order: entry gate, scope, spec, evidence, change logic, validation;
 - Summarize complex outputs with: facts, assumptions, unknowns, evidence, decision, next step;
+- Keep guidance aligned with `MODEL_STRUCTURE.md` (One-Minute Summary) for consistency across team and AI outputs;
 
 ## Relevant Background
 

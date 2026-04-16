@@ -10,6 +10,24 @@ It focuses on language, sequencing, and decision flow rather than on company-spe
 Good model instructions should behave like an execution funnel rather than a flat list of advice.
 The structure should reduce premature action, force evidence collection, and make outputs easier to review.
 
+## One-Minute Summary
+
+Think of this model like shared LEGO building steps for the whole team:
+
+1. Decide what to build
+2. Check what is known and unknown
+3. Define what "done" means
+4. Show evidence
+5. Explain why this approach
+6. Validate the result
+
+Why this helps:
+
+- fewer mistakes
+- easier onboarding
+- clearer decisions
+- more consistent AI and human outputs
+
 ## Structural Pattern
 
 The most useful pattern is:

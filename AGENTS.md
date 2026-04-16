@@ -48,6 +48,16 @@ When answering questions or generating text:
 
 Default working mode for analysis, planning, and implementation-related guidance is the execution funnel from `MODEL_STRUCTURE.md`.
 
+Quick summary:
+
+- Use one shared step-by-step path before implementation.
+- Define the target and evidence first, then execute.
+- Keep outputs easy to review and verify.
+
+Canonical explanation:
+
+- See `MODEL_STRUCTURE.md` section "One-Minute Summary".
+
 Expected sequence:
 
 1. Entry Gate

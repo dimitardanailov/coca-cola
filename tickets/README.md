@@ -54,6 +54,14 @@ Optional files (add only when the ticket needs them):
 
 Use the execution-funnel approach from `MODEL_STRUCTURE.md` as the default flow for each ticket.
 
+Quick checklist:
+
+1. Clarify the ticket goal.
+2. Write scope and non-goals.
+3. Capture evidence.
+4. Document decision logic.
+5. Validate and record proof.
+
 Recommended sequence:
 
 1. Entry Gate and Scope Check in `00.index.md`
