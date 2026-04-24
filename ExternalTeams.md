@@ -1,0 +1,50 @@
+# External Teams
+
+## Purpose
+
+Short internal notes about collaborators outside the Promo Plus core team. This file is a personal reference used to:
+
+- track who is who across external teams;
+- keep context for cross-team communication;
+- support AI-assisted message review for external dependencies;
+- speed up onboarding and coordination for shared work;
+
+## Project Context
+
+- Company: Coca - cola;
+- Sub Project: Promo Plus;
+- Scope: external teams and collaborators;
+- Language note: I am not a native speaker;
+
+## How To Use This File
+
+- Keep entries short;
+- Prefer facts over opinions;
+- Mark uncertain information explicitly;
+- Use this file for people outside Promo Plus core team;
+- Keep Promo Plus core team members in `TeamMembers.md`;
+
+## Team Groups
+
+### Promo Plus Team
+
+- Source of truth: `TeamMembers.md`;
+- Purpose: core project team members and direct delivery roles;
+
+### Other Teams
+
+- Source of truth: this file (`ExternalTeams.md`);
+- Purpose: external collaborators, dependencies, and partner teams;
+
+## External Team Members
+
+### James Moorman
+
+- Full Name: James Moorman;
+- Nickname: jamesMoorman;
+- Role: Engineer, DevOps;
+- Team: 0801 Martech - Architect & Engineer US;
+- Project familiarity: External collaborator;
+- Location: US;
+- Contribution type: DevOps / infrastructure support;
+- Language: first language english;
