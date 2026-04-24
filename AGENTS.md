@@ -44,6 +44,13 @@ When answering questions or generating text:
 - prefer short, structured outputs;
 - avoid rewriting files unless explicitly requested;
 
+## Ticket Folder Naming — Enforced Rule
+
+- Ticket folders MUST use the format `<two-digit-sequence>.<ticket-id>`, for example `02.2954338`.
+- The ticket ID is the external tracker number (Jira / Azure DevOps). Never a human-readable label or slug.
+- Using descriptive names such as `02.google-cloud-permissions` is a violation of this convention.
+- This rule is non-negotiable. Apply it every time a new ticket folder is created.
+
 ## Spec-Driven Execution Standard
 
 Default working mode for analysis, planning, and implementation-related guidance is the execution funnel from `MODEL_STRUCTURE.md`.
