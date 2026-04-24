@@ -18,6 +18,7 @@ Each file acts like a collection of a different type of entity or context;
 - `MODEL_STRUCTURE.md`: reusable execution-funnel model for spec-driven work and instruction quality;
 - `Profile.md`: personal working context, blockers, progress, goals, and AI expectations;
 - `TeamMembers.md`: people, roles, project familiarity, and team relationships;
+- `ExternalTeams.md`: people, roles, and collaboration context for teams outside Promo Plus core team;
 - `TechnologyStack.md`: tools, frameworks, environment details, setup constraints;
 - `tickets/`: ticket-level notes, implementation history, delivery context, and sprint demo artifacts; see `tickets/README.md` for structure rules;
 
@@ -27,6 +28,7 @@ Each file acts like a collection of a different type of entity or context;
 - Prefer referencing entities by name across files;
 - Use `Profile.md` as the source of truth for personal progress and onboarding state;
 - Use `TeamMembers.md` to specify details about team;
+- Use `TeamMembers.md` for Promo Plus core team members and `ExternalTeams.md` for cross-team/external collaborators;
 
 ## Team Operating Model
 
