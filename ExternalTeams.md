@@ -48,5 +48,19 @@ Short internal notes about collaborators outside the Promo Plus core team. This 
 - Location: US;
 - Contribution type: DevOps / infrastructure support;
 - Language: first language english;
-- Collaboration model: Promo Plus team defines what is needed; James applies it. He is not a decision maker for product or infrastructure choices;
-- Interaction pattern: share a prepared list of requirements; James executes on the DevOps side;
+- Collaboration model: Promo Plus team defines what is needed; James applies it through DevOps implementation. He is not a decision maker for product or infrastructure choices;
+- Interaction pattern: use APIs, Predefined Roles, & Custom Permissions as the primary requirements document, then share the finalized list with James for execution;
+
+### Vijay Goli
+
+- Full Name: Vijay Goli;
+- Nickname: vijayGoli;
+- Role: Senior Manager, Adobe Platform Engineer;
+- Team: 0801 Martech - Architect & Engineer US;
+- Project familiarity: External collaborator;
+- Location: US;
+- Contribution type: Management / DevOps process alignment;
+- Language: first language english;
+- Manager relationship: manager of James Moorman;
+- Collaboration model: Vijay confirmed the delivery model - deployments are handled through CI/CD GitHub Actions with a pipeline service account holding deployment roles; individual user access stays limited to development activities;
+- Interaction pattern: align detailed setup during calls, keep role and API requirements centralized in APIs, Predefined Roles, & Custom Permissions, and pass finalized changes to James for implementation;
