@@ -48,3 +48,5 @@ Short internal notes about collaborators outside the Promo Plus core team. This 
 - Location: US;
 - Contribution type: DevOps / infrastructure support;
 - Language: first language english;
+- Collaboration model: Promo Plus team defines what is needed; James applies it. He is not a decision maker for product or infrastructure choices;
+- Interaction pattern: share a prepared list of requirements; James executes on the DevOps side;
