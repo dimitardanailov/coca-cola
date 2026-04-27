@@ -23,6 +23,8 @@ const ticketMeta: TicketMeta = {
     relatedDocs: [
         "../../promo-plus-core-infrastructure/.context/gcp-iam/apis-predefined-roles-custom-permissions.md",
         "../../ExternalTeams.md",
+        "../../ngps-global/serverless.yml",
+        "../../ngps-global/global-infra.yml",
     ],
     relatedFiles: ["00.index.md", "01.requirements.md", "02.decisions.md"],
     lastUpdated: "2026-04-24",
