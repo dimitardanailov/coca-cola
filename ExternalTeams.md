@@ -64,3 +64,15 @@ Short internal notes about collaborators outside the Promo Plus core team. This 
 - Manager relationship: manager of James Moorman;
 - Collaboration model: Vijay confirmed the delivery model - deployments are handled through CI/CD GitHub Actions with a pipeline service account holding deployment roles; individual user access stays limited to development activities;
 - Interaction pattern: align detailed setup during calls, keep role and API requirements centralized in APIs, Predefined Roles, & Custom Permissions, and pass finalized changes to James for implementation;
+
+### Sunil Ramakrishnappa
+
+- Full Name: Sunil Ramakrishnappa;
+- Nickname: sunilRamakrishnappa;
+- Role: Senior Director, Info Tech - Business and Product Management;
+- Team: 0801 Martech - Architect & Engineer US;
+- Project familiarity: External collaborator;
+- Location: US;
+- Contribution type: Management / business and product alignment;
+- Language: first language english;
+- Manager relationship: manager of Vijay Goli;
