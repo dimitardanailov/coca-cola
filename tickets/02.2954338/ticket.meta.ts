@@ -17,7 +17,7 @@ const ticketMeta: TicketMeta = {
     ticketId: "2954338",
     sequence: "02",
     title: "NGPS/Promo+ Permissions Matrix — Baseline Groups and IAM Role Mapping",
-    status: "in-progress",
+    status: "done",
     priority: "high",
     owners: ["mariaDobreva"],
     relatedDocs: [
@@ -26,6 +26,11 @@ const ticketMeta: TicketMeta = {
         "../../ngps-global/serverless.yml",
         "../../ngps-global/global-infra.yml",
     ],
-    relatedFiles: ["00.index.md", "01.requirements.md", "02.decisions.md"],
-    lastUpdated: "2026-05-01",
+    relatedFiles: [
+        "00.index.md",
+        "01.requirements.md",
+        "02.decisions.md",
+        "archive/infra-access-iteration-history.md" // Full evidence and conversation log for initial IAM/infra access iterations; see for rationale, Q&A, and decision context
+    ],
+    lastUpdated: "2026-05-06",
 };
