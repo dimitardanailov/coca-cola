@@ -117,3 +117,24 @@ Given that this is a POC account, I don't see a problem with the infrastructure 
 The service account that you have pasted (promo-plus-migration) is created via gcp cli (gcloud) and it should
 - Have the necessary permissions to the firestore - it looks like you got that
 - Be able to be impersonated by your script to gain short-term access to the firestore. Most secure way. - Vijay Goli if you could provide your thoughts here that would be great.
+
+11)
+
+Hi James,
+
+Thanks for your previous guidance and confirmation on the POC Missions Project setup.
+
+Update:
+- I’ve successfully verified end-to-end GCP authentication, quota project setup, and asset bucket creation on poc-missions-reqpoc00289.
+- The (default) Firestore database is now initialized and accessible; health checks and collection listing work as expected.
+- All setup steps (including ADC, user credentials, and storage access) are automated and documented in our scripts.
+- For Alpha, Beta, and Gamma, I still do not have Firebase Console access: awaiting team lead approval to proceed with verification and initialization there.
+
+Model in use:
+- For POC, resources (Firestore, buckets) are created via gcloud CLI and verified with scripts.
+- For Alpha/Beta/Gamma/Prod, we will follow the required Infrastructure as Code (Terraform) and GitHub Actions deployment model, as you outlined.
+
+Let me know if you need any additional details or if there are further steps I should take for the non-POC environments.
+
+Thanks,
+Dimitar
